@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style type="text/css">
+			/* 
+			 1,拥有属性
+			 */
+			/* 拥有id属性的p标签 */
+			p[id]{
+				color: red;
+			}
+			
+			p[id="p4"]{
+				color:blue;
+			}
+			
+			p[id^="pp"]{
+				color: yellow;
+			}
+			
+			p[id$="3"]{
+				color: #7FFFD4;
+			}
+			
+			p[id*="apx"]{
+				color: #880015;
+			}
+			
+			[class~="item5"]{
+				color: #C8BFE7;
+			}
+
+    </style>
+</head>
+<body>
+
+<p id="pp1" class="item item1 item2">p1</p>
+<p id="p2">p2</p>
+<p id="pp3">p3</p>
+<p id="p4">p4</p>
+<p id="abcpxyz">p5</p>
+<span id="span1" class="item item5">span1</span>
+</body>
+</html>
+
+
+<!--  6
+ 
+1,拥有属性 []
+2,拥有属性 并且值等于 [属性名=""]
+3,拥有属性 并且属性值以aa开头 [属性名^="aa"]
+4,拥有属性 并且属性值以aa结尾 [属性名$="aa"]
+5,拥有属性 并且属性包含字符串aa [属性名*="aa"]
+6,拥有属性 并且属性值其中一个为 aa [属性名~="aa"] 常用语class
+ -->
