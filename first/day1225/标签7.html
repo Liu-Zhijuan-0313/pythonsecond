@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+<!-- 使用form进行数据交互 -->
+
+<!-- <form action="http://127.0.0.1:8888" method="get"> -->
+<!-- <form action="http://www.baidu.com/s" method="get"> -->
+<form action="#" method="get">
+
+    搜索内容：<input type="text" name="wd" value=""/>
+    <br>
+    <!-- 			性别：男<input type="radio" name="sex" value="man" checked/> 女 <input type="radio" name="sex" value="woman" />
+                <br>
+
+                密码:<input type="password" name="password"  value="" />
+                <br>
+
+                <input type="hidden" name="hidetag"  value="hello" /> -->
+
+    <input type="submit" value="search"/>
+</form>
+
+</body>
+</html>
+
+<!-- 
+General：
+	requestURL :请求URL（资源在web服务器上的路径） 
+	request Method:请求方法 常用get post
+	status Code:返回状态码 200成功返回 404页面丢失 304请求没有发生，并且不断请求
+	Remote Address: 服务器IP+端口
+	Refer ：有哪一个页面进入（由baidu进入百度新闻  ）
+Response Headers：响应头
+	Connection: keep-alive 服务端保持联状态
+	Content-Type: 返回内容的类型 
+	Status: 200 OK 状态码
+	
+Request Headers：请求头
+	Accept: image/webp,image/apng,image/*,*/*;q=0.8 需要接受的数据格式
+	Accept-Encoding: gzip, deflate, br 是否经过压缩，是否经过编码
+	Cookie: 缓存数据 
+	Host:  请求的主机
+	User-agent:用户标识
+ -->
