@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JS学习</title>
+    <!-- <script type="text/javascript">
+        alert("弹框会阻止js代码解析")
+    </script> -->
+
+
+    <!-- 一般情况
+     在head中引入外部js文件 之后才在html页面head或者body中编写js代码
+
+     -->
+
+    <!-- 引入外部js文件 -->
+    <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+
+
+    <!-- 解析顺序先head 在body -->
+    <script type="text/javascript">
+			console.log("在head中执行")
+			/*
+			console.log("在head中执行")
+			console.log("在head中执行")
+			console.log("在head中执行")
+			*/
+
+    </script>
+
+
+</head>
+<body>
+
+
+<script type="text/javascript">
+			console.log("在body中执行")
+			
+			
+			
+			document.write("<h1>这个方法会在body中写入内容</h1>")
+
+</script>
+
+
+</body>
+</html>
+
+
+<!-- 
+1,html页面内部编写js代码
+2,引入外部js文件
+3,3中输出  
+console.log()输出到控制台
+alert()输出到弹窗  会阻塞程序解析
+document.write() 在body中写入内容
+4，js注释
+ 
+ 
+javaScript
+因特网上最流行的脚本语言，轻量级的编程语言，可插入html页面
+1.body 2.head 3.外部用script src="路径"引入
+注释： //单行  /* */多行
+输出：
+	alter("内容");//警告框，会阻断javascript执行
+	document.write("内容");//向文档写入html或js代码
+	console.log();//控制台输出，调式
+ -->
