@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+			// 1, 函数内部嵌套函数
+			// 2, 外部函数将内部函数返回
+			// 3, 内部函数可以访问外部函数局部变量,并且保存变量
+			
+			function fun(){
+				let a = 10;
+				
+				function fun1(){
+					let b = 20;
+					a++;
+					console.log(a,b);
+				}
+				
+				return fun1;
+			}
+			result = fun()
+			result()
+			result()
+			result()
+			result()
+			result1 = fun()
+			result1()
+			result1()
+			
+			
+			// 变量的作用域
+// 			function f1(){
+// 				let a = 10;
+// 			}
+// 			function f2(){
+// 				let b = 20;
+// 				console.log(a); //出错
+// 			}
+			
+			
+			
+			
+			
+
+</script>
+
+
+</body>
+</html>
