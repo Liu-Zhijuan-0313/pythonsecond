@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+
+<a href="http://www.baidu.com">百度</a>
+<br>
+<a href="标签1.html" target="_blank">跳转到标签1.html</a>
+
+
+<span id="py1810">跳转目标</span>
+<a href="#py1810">跳转到指定位置</a>
+
+<a href="mailto:496575233@qq.com">点我可以发邮件</a>
+
+
+<!--
+ a标签超级链接 需要使用到属性href 目标url
+ target  _self 当前页面打开  _blank 新的空白页面打开
+ 锚点跳转  超级链接可以指定本页面特定位置  id属性
+
+ -->
+
+<!--
+ http://www.baidu.com
+  http http协议
+  www.baidu.com 百度域名 ==== 115.239.211.112:443
+  http://192.168.15.3:8848/Py1811/day1224/%E6%A0%87%E7%AD%BE2.html
+  -->
+
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+
+<!-- 使用网络图片 -->
+<!-- <img src="https://imgsa.baidu.com/news/q%3D100/sign=0e4c99eadc1373f0f33f6b9f940e4b8b/a8014c086e061d95d57436a976f40ad162d9ca75.jpg" > -->
+<!-- 使用本地图片 -->
+<img src="img/gouwuche.png" width="400" height="150" usemap="#imghotarea">
+<!-- 使用map标签定义图片热点区域 -->
+<map name="imghotarea">
+    <!-- <area shape="circle" coords="100,100,50" href ="#" alt="" /> -->
+    <area shape="rect" coords="50,50,200,75" href="#" alt=""/>
+    <!-- <area shape="poly" coords="0,0,0,50,25,25,25,60" href ="#" alt="" /> -->
+</map>
+
+<video src="video/颈椎操.mp4" controls>当前浏览器不支持video</video>
+<audio src="audio/世界也是我们的家.mp3" controls>
+    当前浏览器不支持audio
+</audio>
+</body>
+</html>
