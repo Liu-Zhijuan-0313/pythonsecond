@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style type="text/css">
+			*{
+				color: blue;
+			}
+			#div0{
+				background-color: #ED1C24;
+			}
+			#div1{
+				background-color: #000000;
+			}
+			#div2{
+				background-color: #7F7F7F;
+			}
+			#div0>#div1>p{
+				background-color: #880015;
+			}
+			#div3{
+				background-color: #B97A57;
+			}
+			#div3>ul{
+				background-color: #FFAEC9;
+			}
+			#div3>ul>li.item{
+				background-color: #FFC90E;
+			}
+			#div4{
+				background-color: #B5E61D;
+			}
+			#div4>p{
+				background-color: #99D9EA;
+			}
+			#div4>p+p{
+				background-color: #C8BFE7;
+			}
+			#div4>p+p>span{
+				background-color: #A349A4;
+			}
+
+    </style>
+
+
+</head>
+<body>
+<div id="div0">div0
+    <div id="div1">div1
+        <div id="div2">div2</div>
+        <p>p1</p>
+    </div>
+    <div id="div3">
+        div3
+        <ul>
+            <li class="item">001</li>
+            <li class="item">002</li>
+        </ul>
+    </div>
+
+    <div id="div4">div4
+        <p>p2</p>
+        <p>
+            p3
+            <span>span1</span>
+        </p>
+    </div>
+</div>
+</body>
