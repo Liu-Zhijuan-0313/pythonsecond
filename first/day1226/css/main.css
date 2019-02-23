@@ -1,0 +1,16 @@
+/*  
+ 3 外部样式表
+ 语法和内部样式表一致
+ 优先级次于内部样式表
+ 
+ 
+ 优点，多个html可以共用一个css样式
+ */
+
+p{
+	background-color: aquamarine;
+	color: red;
+	border-bottom-style: dotted;
+	border-bottom-width: 2px;
+	border-bottom-color: black;
+}
