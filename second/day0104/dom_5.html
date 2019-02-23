@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+
+
+<div>
+    <p>p1</p>
+    <p>p2</p>
+    <p id="p3">p3</p>
+    <p>p4</p>
+    <p>p5</p>
+    <span>span1</span>
+</div>
+
+
+<script type="text/javascript">
+			// let div = document.getElementsByTagName("div")[0];
+			// children找到所有的子标签
+			// console.log(div.children);
+			// console.log(div.firstElementChild);
+			// console.log(div.lastElementChild);
+			
+			// let p3 = document.getElementById("p3");
+			// console.log(p3.parentElement)
+			// console.log(p3.previousElementSibling);
+			// console.log(p3.nextElementSibling);
+			
+			
+			
+			// 找到父标签
+			let div = document.getElementsByTagName("div")[0];
+			let span = document.getElementsByTagName("span")[0];
+			// 创建一个p标签
+			let p6 = document.createElement("p");
+			p6.innerText="p6";
+			p6.setAttribute("id","p6");
+			
+			
+			div.insertBefore(p6,span);
+			
+			// div.appendChild(p6);
+
+</script>
+
+</body>
+</html>
+
+<!--
+操作DOM节点：
+ parentElement父元素
+ children 所有的子元素
+ firstElementChild第一个子元素
+  lastElementChild最后一个子元素
+  previousElementSibling前一个
+  nextElementSibling后一个
+ 
+ 
+ 
+ createElement
+ 父元素.appendChild(子元素)
+ 父元素.insertBefore(新元素，参考元素)
+ 元素.innerText
+ 元素.setAttribute
+ 
+ 
+ -->
