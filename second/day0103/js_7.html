@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <script src="js/util.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body>
+
+
+<script type="text/javascript">
+			/*
+			let sum=0;
+			for(let i=0;i<10;i++){
+				
+				if(i==2)
+				{
+					// for循环碰到break不在执行
+					// break;
+					
+					// for循环碰到continue 终止当前循环 后续循环继续执行
+					continue;
+				}
+				sum += i;	
+			}
+			console.log(sum);
+			
+			*/
+		   
+		   // 系统函数
+		   // 1 is not a number   isnan
+		   console.log(isNaN(100));
+		   
+		   let str = "3.1415";
+		   console.log(parseInt(str));
+		   console.log(parseFloat(str));
+		   console.log(typeof(parseInt(str)));
+		   
+		   // Finite有限  isFinite判断是不是为有限制
+		   console.log(isFinite(100));
+		   console.log(isFinite(Number.POSITIVE_INFINITY))
+		   
+		  
+		   
+		
+		   
+		   console.log( add(10,20) );
+
+		   
+		   
+		   // fun(n) = fun(n-1)+fun(n-2)
+		   function fun(n){
+			   if(n==1)
+					return 0;
+			    else if(n==2)
+					return 1;
+				else
+					return fun(n-1) + fun(n-2);
+		   }
+		   
+		   console.log(fun(100))
+		   
+
+</script>
+
+</body>
+</html>
+
+
+<!-- 
+break
+continue 
+isNaN 
+parseFloat/parseInt 
+isFinite 
+
+定义函数
+function 函数名(){
+	
+}
+ 
+函数调用
+函数名();
+
+ 0 1 1 2 3 5 8 13 ......   10000
+
+=========================================
+break:结束循环
+continue:结束当前循环，进入下一次循环
+函数：
+	系统函数(内置函数) isNaN parseInt() parseFloat() isFinite()用来确定参数是否是一个有限数值
+	自定义函数：function 函数名(){}
+ -->
