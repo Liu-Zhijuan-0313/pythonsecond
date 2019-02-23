@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style type="text/css">
+			div{
+				width: 100px;
+				height: 100px;
+				margin: 5px;
+				background-color: gray;
+				float: left;
+			}
+			
+			#red{
+				background-color: red;
+			}
+			
+
+    </style>
+
+</head>
+<body>
+<div>div1</div>
+<div>div2</div>
+<div>div3</div>
+
+
+<script type="text/javascript">
+			let divs = document.getElementsByTagName("div");
+			
+			
+			
+		    // for in 通常不用于遍历数组 会不确定遍历的对象  通常用于遍历对象
+// 			let obj = {"name":"zzy","age":20};
+// 			for(let key in obj){
+// 				console.log(obj[key])
+// 		    }
+				
+			
+			// for 遍历数组
+			for(let i=0;i<divs.length;i++){
+				// 得到div之后给每个div赋予点击事件
+				divs[i].onclick = function(){					
+					
+					// 把所有的div变灰
+					for(let j=0;j<divs.length;j++){
+						// divs[j].removeAttribute("id");
+						divs[j].style.backgroundColor="gray";
+					}
+					
+					
+					// 将点击的div变红
+					// divs[i].setAttribute("id","red");
+					divs[i].style.backgroundColor="red";
+				}
+			}
+			
+			
+
+</script>
+
+</body>
+</html>
+
