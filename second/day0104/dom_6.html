@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+			body{
+				background-color: black;
+			}
+			
+			img{
+				position: absolute;
+			}
+
+    </style>
+</head>
+<body>
+
+
+<script type="text/javascript">
+			window.onclick = function(e){
+				console.log("鼠标点击了",e.clientX,e.clientY);
+				// 生成图片
+				let weixin = document.createElement("img");
+				weixin.setAttribute("src","img/timg.gif");
+				
+				// 得到随机的宽度和高度
+				let ranwh = Math.random()*54+20;
+				
+				weixin.width = ranwh;
+				weixin.heigth = ranwh;
+				
+				weixin.style.left  = (e.clientX-ranwh/2) + "px";
+				weixin.style.top = (e.clientY-ranwh/2) + "px";
+				
+				
+				
+				document.body.appendChild(weixin);
+				
+			}
+
+</script>
+</body>
+</html>
+
+<!-- 
+ 1， body背景色
+ 2，window.onclick = function(e){
+	 鼠标位置  e.clientX  e.clientY
+ }
+ 3,创建图片
+let img = document.createElement("img")
+设置src属性
+document.body.appendChild(img)
+4，更改图片位置 
+position ： absolute 
+left  top
+5,随机大小
+width  heigth
+ 
+ 
+ 
+ 
+ 
+ -->
