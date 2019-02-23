@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body style="height: 2000px;">
+
+<form name="form1" action="" method="">
+
+</form>
+
+<b name="b1">ddd</b>
+<!-- 通过JS可以控制浏览器元素 -->
+
+<script type="text/javascript">
+
+			window.onscroll = function(){
+				console.log("滚动条滚动了",window.scrollY);
+				
+			}
+			window.onresize = function(){
+				console.log("窗口个大小发生改变");
+			}
+			
+			window.onclick = function(){
+				console.log("点击");
+				console.log(window.form1);
+			}
+
+
+</script>
+</body>
+</html>
+<!--
+BOM浏览器对象模型
+Window属性：
+	history:back,forward,go(count)
+	scree:width,height,availWidth,availHeight
+	navigator:用来描述浏览器相关信息的
+	Location:host、hostname、href、pathname、port、protocol
+Window事件
+onload 一个页面或一幅图像完成加载 在对象已加载时触发
+onresize 随着窗口或框架大小的改变而改变 window.onresize=function(){}
+onscroll 滚动条滚动事件
+-->
