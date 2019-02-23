@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>制作导航条</title>
+    <style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background: url(img/bdbj.png) top center no-repeat #F5F5F5;
+			}
+			.header{
+				height: 295px;
+			}
+			.nav{
+				height: 80px;
+				width: 1200px;
+				/* background-color: red; */
+				margin: 0 auto;
+				
+				/* 
+				 1个数  上下左右
+				 2个数  上下 ， 左右
+				 3个数  上，  左右， 下
+				 4个数  上，右，下，左
+				 */
+			}
+			ul>li{
+				list-style: none;
+				
+				/* background-color: rgb(182,6,6); */
+				float: left;
+				width: 148px;
+				height: 80px;
+				padding-right: 2px;
+				background: url(img/shuxian.png) no-repeat top right rgb(182,6,6);
+				text-align: center;
+			}
+			ul>li>a{
+				display: block;
+				height: 80px;
+			}
+			ul>li>a>img{
+				display: block;
+				margin: 15px auto 10px;
+			}
+			ul>li:hover{
+				background-color: #B60606;
+			}
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <img src="img/logo.png">
+</div>
+<div class="nav">
+    <ul>
+        <li><a href="#"><img src="img/iconnav01.png">首页</a></li>
+        <li><a href="#"><img src="img/iconnav02.png">走进小镇</a></li>
+        <li><a href="#"><img src="img/iconnav03.png">新闻动态</a></li>
+        <li><a href="#"><img src="img/iconnav04.png">企业社区</a></li>
+        <li><a href="#"><img src="img/iconnav05.png">视频专区</a></li>
+        <li><a href="#"><img src="img/iconnav06.png">办事大厅</a></li>
+        <li><a href="#"><img src="img/iconnav07.png">联系我们</a></li>
+        <li><a href="#"><img src="img/iconnav08.png">咨询投诉</a></li>
+    </ul>
+</div>
+</body>
+</html>
