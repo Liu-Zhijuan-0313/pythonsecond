@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+			// 有名函数
+// 			function fun1(){
+// 				
+// 			}
+			
+			// 没有名字的匿名函数 不能直接写报错
+// 			function(){
+// 				
+// 			}
+
+			// 将匿名函数赋值给f变量 (JS中一切皆对象)
+			let f = function(){
+				console.log("函数执行了");		
+			}
+			
+			// console.log(typeof(f))
+			f()
+			
+			
+			
+			let obj = {}
+			obj.fff = function(){
+				console.log("执行了");
+			}
+			// console.log(typeof(obj.fff))
+			obj.fff()
+			
+			
+			function fun(a,b,f){
+				console.log(a,b);
+				f();
+			}
+			
+			// 将匿名函数作为参数  传递到fun函数中
+			fun(10,20,function(){console.log("匿名函数执行了")}    )
+			
+			
+			
+
+</script>
+
+</body>
+</html>
+
+<!-- 匿名函数 没有函数名
+ 可以付给变量
+ 也可以付给对象的键
+=====================================
+匿名函数：匿名函数就是没有名字的函数
+1,匿名函数赋值给变量  执行函数
+2,将匿名函数赋值给对象的f键 执行函数
+3, 将匿名函数作为参数传递给fun函数 执行fun函数
+ 
+ -->
