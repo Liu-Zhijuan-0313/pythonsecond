@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+				height: 3000px;
+			}
+			span{
+				/* width: 80px;
+				height: 30px; */
+				background-color: gray;
+				z-index: -10;
+				color: red;
+			}
+			#s10{
+				position: relative;
+				left: 50px;
+				top: 50px;
+			}
+			#s11{
+				position: absolute;
+				left: 10px;
+				background-color: red;
+			}
+			#div{
+				width: 300px;
+				height: 60px;
+				background-color: #99D9EA;
+				position: absolute;
+				left: 50px;
+				top: 0px;
+			}
+			
+			
+			.fixed{
+				width: 100px;
+				height: 100px;
+				background-color: #880015;
+				position: fixed;
+				top: 100px;
+				/* left: 100px; */
+				right: 100px;
+				
+			}
+			
+			.stick{
+				width: 100px;
+				height: 100px;
+				background-color: #7FFFD4;
+				position: sticky;
+				top: 20px;
+			}
+
+    </style>
+</head>
+<body>
+<!--
+ 1，static  文档流定位 不需要额外操作  从左往右 从上往下排列 不能使用left top
+ 2，relative 相对于文档流给与的默认位置 可以用left top
+    不会影响后续元素
+ 3，absolute绝对布局  脱离文档流 找到外层第一个不是static布局的标签然后left top
+ 4，fixed 参考窗口位置
+ 5,sticky 粘性定位 没有达到目标位置之前使用相对绝对定位  达到之后fixed
+
+ -->
+
+<span id="s1">s1</span>
+<span id="s2">s2</span>
+<span id="s3">s3</span>
+<span id="s4">s4</span>
+<span id="s5">s5</span>
+<span id="s6">s6</span>
+<span id="s7">s7</span>
+<span id="s8">s8</span>
+<span id="s9">s9</span>
+<span id="s10">s10</span>
+
+<div id="div">
+    555555555555555555555
+    <span id="s11">s11</span>
+</div>
+
+
+<div style="z-index: 100;">
+    <p>AAAAAAAAAA</p>
+</div>
+
+
+<div class="fixed">
+
+</div>
+<div style="height: 600px;">
+
+</div>
+
+<div class="stick">
+
+</div>
+</body>
+</html>
