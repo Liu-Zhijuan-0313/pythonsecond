@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+
+<p id="p1">p1</p>
+<p>p2</p>
+<p class="p3">p3</p>
+<p name="p4">p4 <span>span1</span></p>
+
+<p>
+<h1>当前点击了<span id="countspan">0</span>次</h1></p>
+
+<script type="text/javascript">
+			// 通过id得到唯一一个
+			let p1 = document.getElementById("p1");
+			console.log(p1);
+			// 通过标签名得到集合 集合[n]
+			let p2 = document.getElementsByTagName("p")[1];
+			console.log(p2);
+			
+			// 通过类名查找得到集合  集合[n]
+			let p3 = document.getElementsByClassName("p3")[0];
+			console.log(p3);
+			
+			// 通过name 得到集合 集合[n]
+			let p4 = document.getElementsByName("p4")[0];
+			console.log(p4);
+			
+			// console.log(p4.innerHTML, "++++ " ,p4.innerText)
+			
+			p4.innerText="<h1>888888</h1>";
+			p3.innerHTML="<h1>888888</h1>";
+			
+			
+			let countspan = document.getElementById("countspan");
+			let count = 0;
+			
+			// 点击window 计数
+			window.onclick = function(){
+				console.log("点击了window");
+				count++;
+				countspan.innerText = count;
+			}
+			
+			
+
+</script>
+
+
+</body>
+</html>
+<!--
+DOM文档对象模型
+获取文档对象：
+	document.getElementById()
+	document.getElementsByTagName() 标签
+	document.getElementsByName() 属性
+	document.getElementsByClassName()
+-->
