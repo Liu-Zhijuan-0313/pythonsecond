@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+
+<!-- 表单
+ forma
+ 属性action：用来提交到服务器的路径
+ 属性method：提交的方法 get post
+
+ 可以将表单域中的数据提交到服务器
+ 格式为：name = value
+
+
+ -->
+
+<!-- 表单标签 -->
+<form action="http://127.0.0.1:8888" method="post">
+
+    <!-- 表单域
+     用来提交到服务器数据
+     -->
+    用户名:<input required type="text" name="username" value="" autocomplete="off" placeholder="用户名/邮箱/手机号"/>
+    <br>
+    密码：<input type="password" name="password" value=""/>
+    <br>
+    性别
+    <br>
+    <!-- 单选框 name 必须一致 -->
+    男 <input type="radio" name="sex" value="" checked/>
+    女 <input type="radio" name="sex" value=""/>
+    <br>
+    用户头像：
+    <br>
+    <input type="file" name="headpic" value=""/>
+    <br>
+    地址(省份)
+
+    <select name="province">
+        <option value="">河南</option>
+        <option value="">河北</option>
+        <option value="" selected>广州</option>
+    </select>
+
+    <!-- 	<textarea rows="" cols="">
+            请输入备注
+        </textarea> -->
+
+
+    <br>
+    爱好:
+    <br>
+    足球<input type="checkbox" name="hobby" value="" checked/>
+    篮球<input type="checkbox" name="hobby" value="" checked/>
+
+    <!-- 			<br>
+                喜好颜色
+                <input type="color" name="col"  value="" />
+                <br>
+                <input type="date" name="borntime"  value="" />
+                <input type="email" name="email"  value="" />
+                <input type="number" name="num"  value="" /> -->
+
+
+    <!-- 隐藏域在页面看不见 -->
+    <input type="hidden" name="agree" value="true"/>
+
+
+    <!-- 表单按钮 -->
+    <br>
+    <input type="submit" name="" value="提交"/>
+    <input type="reset" name="" value="重置"/>
+    <input type="range" name="" id="" value=""/>
+</form>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+
+<form action="" method="">
+    <table>
+        <tr>
+            <th>邮箱</th>
+            <th><input type="email" name="email" value="" placeholder="请输入工作邮箱"/></th>
+        </tr>
+
+
+        <tr>
+            <td>验证码</td>
+            <td>
+                <table>
+                    <tr>
+                        <th><input type="text" name="keyword" value=""/></th>
+                        <th><img src="https://gitee.com/rucaptcha/" width="140" height="40"></th>
+                    </tr>
+                </table>
+
+
+            </td>
+        </tr>
+        <tr>
+            <th>邮箱验证</th>
+            <th>
+                <table>
+                    <tr>
+                        <th><input type="text" name="keyword2" value=""/></th>
+                        <th>
+                            <button type="button">获取验证码</button>
+                        </th>
+                    </tr>
+
+                </table>
+            </th>
+        </tr>
+
+
+        <!-- 			<tr><td>Data</td></tr>
+                    <tr><th>Header</th></tr>
+                    <tr><td>Data</td></tr>
+                    <tr><th>Header</th></tr>
+                    <tr><td>Data</td></tr> -->
+    </table>
+</form>
+
+
+<!-- web浏览器 ：客户端
+     各种服务端：Python，Java , NodeJs, C++,....
+
+     请求：request：浏览器发出的请求（）
+     响应：response：  服务端针对浏览器的请求给与的回应
+
+
+ -->
+
+
+</body>
+</html>
