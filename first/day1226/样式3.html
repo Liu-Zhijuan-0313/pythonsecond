@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+			/* p,span,div,a,li{
+				color: red;
+			} */
+			
+		/* 	div#div2>span{
+				color: red;
+				
+			} */
+			
+			
+			/* #s3+a{
+				color: red;
+			} */
+			
+			/* #s3~span{
+				color: red;
+			} */
+			
+			/* #s3~a,#s3~span{
+			color: red;
+			} */
+
+    </style>
+</head>
+<body>
+
+<!-- 符号选择器
+ ，逗号 满足一项即可
+   空格 选择子孙
+   > 只选择子标签
+   + 相邻的下一个  A的后边为B  选择到A+B紧邻
+   ~ A的后面有B A~B A个B不一定相邻
+
+ -->
+
+<!-- <p>p</p> -->
+<!-- <span>span</span> -->
+<!-- <div>
+     A
+     <div>
+        B
+         <div>
+            C
+            <div>
+                D
+                <p>
+                    P
+                    <span>
+                        Span
+                    </span>
+                </p>
+            </div>
+
+        </div>
+     </div>
+ </div>
+
+ <div id="div2">
+     <span>span3</span>
+     <div>
+         <div>
+             <span>
+             span2
+             </span>
+         </div>
+     </div>
+ </div> -->
+
+<span id="s1">A </span>
+<span id="s2">B </span>
+<span id="s3">C </span>
+<a href="#">hello</a>
+<span id="s4">D </span>
+<span id="s5">E </span>
+
+<p style="color: #F70406;">p1</p>
+
+
+</body>
+</html>
+
+<!-- span[class=s$]*5 -->
+<!--  5
+ 逗号
+ >
+ 空格
+ +
+ ~ 
+ -->
+
