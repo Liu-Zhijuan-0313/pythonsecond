@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style type="text/css">
+			#div1{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+			}
+
+    </style>
+
+</head>
+<body>
+<p id="p111" style="color: red;background-color: black;">p1</p>
+
+
+<div id="div1">AAA</div>
+
+<script type="text/javascript">
+			
+			
+			// 获取元素
+			let p1 = document.getElementsByTagName("p")[0];
+			
+			// p1.id="p111111";
+			// p1["id"] = "p11111";
+			p1.setAttribute("id","p11111");
+			p1.setAttribute("title","啊啊啊啊");
+			p1.removeAttribute("title");
+			
+			
+			console.log(p1.id);
+			console.log(p1["id"]);
+			console.log(p1.getAttribute("id"));
+			
+			
+			p1.style.color = "blue";
+			
+			console.log(p1.style.color);
+			
+			console.log(p1.style.backgroundColor);
+			
+			
+			
+			
+			let  div1 = document.getElementById("div1");
+			div1.onclick = function(){
+				console.log("+++");
+				let red = Math.round(Math.random()*255);
+				let green = Math.round(Math.random()*255);
+				let blue = Math.round(Math.random()*255);
+				div1.style.backgroundColor = "rgb("+red+","+green+","+blue+")";
+			}
+			
+
+</script>
+
+
+</body>
+</html>
+
+
+<!-- 
+ 对象名.属性名
+ 对象名["属性名"]
+ 对象名.getAttribute  .setAttribute  .removeAttribute
+ 
+ 
+ 对象名.style.样式属性名 
+======================================
+操作DOM对象的属性：
+	DOM对象.属性名称
+	DOM对象[属性名称]
+	getAttribute(属性名称)，setAttribute[属性名称，属性值]
+	removeAttrite(属性名称)
+ -->
