@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+			let time = new Date();
+			// 年份
+			console.log(time.getFullYear());
+			console.log(time.getMonth());
+			console.log(time.getDate());
+			console.log(time.getHours());
+			console.log(time.getMinutes());
+			console.log(time.getSeconds());
+			
+			// 得到时间戳  197011 -现在毫秒值			
+			console.log(time.getTime());
+			
+			
+			let array = [1,2,3,4,5,6];
+// 			console.log(array.length);			
+// 			array.push(7)
+// 			console.log(array)
+// 			let delele = array.pop()
+// 			console.log(delele )
+// 			console.log(array)
+
+// 			array.unshift(0);
+// 			console.log(array);
+// 			let delele = array.shift();
+// 			console.log(delele )
+// 			console.log(array);
+
+// 			array.reverse()
+// 			console.log(array)
+				
+// 			array.sort(
+// 					// 使用匿名函数制定排序规则  返回值 负值  整数
+// 				function(a,b){
+// 					return b-a;
+// 				}			
+// 			)
+// 			console.log(array)
+			
+			
+			// 从索引为2的位置删除0个并且把后续参数插入到索引为2的位置
+			// array.splice(2,0,99,100,101);
+			
+// 			array.splice(5,1,56);  
+// 			console.log(array)
+			
+			
+			// 求绝对值
+			function abs(num){
+				if(num<0)
+					return num*-1;
+				else
+					return num;
+			}
+			
+			function max1111(a,b){
+				if(a<b)
+				return b
+				else
+				return a
+			}
+			
+// 			var Math = new Object();
+// 			Math.abs = abs;
+// 			Math.max = max1111;
+
+			// 得到空的对象
+			let MyMath = new Object();
+			MyMath.abs = abs; //只写方法名
+			MyMath.max = max1111;
+			// MyMath.age = 20;
+			console.log(MyMath);
+			
+			// 获取对象的属性值 值
+			// console.log(MyMath.abs)
+			
+			// Math.abs(100)
+			
+			console.log(  MyMath.max(100,50))
+			
+
+</script>
+
+
+</body>
+</html>
+
+<!-- 
+Date
+ getFullYear 
+ getMonth  0
+ getDate 
+ getDay 
+ getHours
+ getMinutes
+ getSeconds
+ getTime
+ 
+Array 
+ length 
+ push 
+ pop 
+ unshift 
+ shift 
+ splice 
+ indexof 
+ sort 
+ reverse 
+
+
+Object 
+由键值对构成
+键：字符串
+值：任意类型（包括函数）
+
+
+ -->
