@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+			
+	
+			/* 普通状态 */
+			a:link{
+				color: red;
+			}
+			/* 点过了颜色 */
+			a:visited{
+				color: green;
+			}
+			/* 鼠标划入 */
+			a:hover{
+				color: blue;
+			}
+			/* 鼠标点击 */
+			a:active{
+				color: #000000;
+			}
+			p{
+				border-bottom-style: solid;
+				border-bottom-width: 2px;
+				border-bottom-color: #008000;
+			}
+			p:hover{
+				color: red;
+				cursor: pointer;
+			}
+			
+			input:disabled{
+				background-color: #B97A57;
+			}
+			input:enabled{
+				background-color:  #7F7F7F;
+			}
+			input:checked{
+				width: 20px;
+				height: 20px;
+			}
+
+    </style>
+
+</head>
+<body>
+<p>AAA</p>
+
+<a href="http://zzy.com">超级链接</a>
+
+<form action="" method="">
+    用户名<input type="text" name="" id="" value="" disabled="disabled"/>
+    <br>
+    密码<input type="text" name="" id="" value=""/>
+    <br>
+    同意<input type="radio" name="agree" id="" value="" checked/>
+    不同意<input type="radio" name="agree" id="" value=""/>
+</form>
+
+</body>
+</html>
+
+<!-- 伪类
+ 全部在基础选择器的结果上
+ 以：开头
+ 7 动态伪类和状态伪类
+ 
+ link
+ visited 
+ hover 
+ active 
+ enable 
+ disable 
+ checke
+ 
+ 
+ 
+ -->
