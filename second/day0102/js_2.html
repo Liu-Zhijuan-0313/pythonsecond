@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+			// var 用来声明变量的关键字
+			var a; //声明一个变量a
+			// 如果一个变量没有赋值  类型为undefined
+			console.log(a, typeof(a));
+			// number表示数字 包括整形浮点型等
+			a=1;
+			console.log(a,typeof(a));
+			a=-55.999;
+			console.log(a,typeof(a));
+			// a 改变为字符串
+			a="hellojs";
+			console.log(a,typeof(a));
+			// a改变为bool类型
+			a= true;
+			console.log(a,typeof(a));
+			
+			// null 为object的派生类
+			a = null;
+			console.log(a,typeof(a));
+			
+			// array继承object
+// 			a = [1,2,3,4];
+// 			console.log(a,typeof(a));
+// 			a = ["1",2,3,true];
+// 			console.log(a,typeof(a));
+// 			console.log(typeof(a[0]) , typeof(a[3]))
+			a = new Array("a","b")
+			console.log(a,typeof(a));
+			
+			a = {"key1":"value1","key2":"value2"},
+			console.log(a,typeof(a));
+			
+			console.log(a.key1)
+			
+			
+
+</script>
+
+
+</body>
+</html>
+
+
+<!-- 
+ number
+ string
+ boolean
+ null 继承object使用typeof得到object  值为null 
+ undefined 值和类型都为undefined
+ typeof类型检测函数
+
+ array
+ object
+
+====================================================
+变量：
+	var全局：如果不初始化会输出undefined，不会报错
+	let局部：函数内部使用let定义后，对函数外部无影响。
+	const常量，不可修改
+类型检测：typeof(obj)
+数据类型：
+	基本：
+		1.字符串string
+		2.数字number
+		3.布尔boolean
+		4.null空值，用来清空
+		5.undefined不含有值
+	复合：数组[]，对象{}
+
+ -->
