@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+			body{
+				margin: 20px;
+				border: red solid 20px;
+				padding: 20px;
+				background-color: #7FFFD4;
+			}
+			span{
+				margin: 20px;
+				border: #000000 solid 20px;
+				padding: 20px;
+			}
+			
+			p{
+				margin: 20px;
+				border: black solid 20px;
+				background-color: gray;
+				padding: 20px;
+			}
+			div{
+				/* margin: 60px;
+				border: 20px #008000 solid;
+				padding: 20px; */
+			}
+			
+			#target{
+				width: 350px;
+				background-color: #880015;
+				height: 500px;
+				margin: 25px;
+				border: solid black 25px;
+				padding: 25px;
+			
+			}
+
+    </style>
+
+</head>
+<body>
+
+<!-- 水平方向 margin不会重合 -->
+<!-- <span>这是个span</span> -->
+
+<!-- <span>这是个span</span> -->
+
+
+<!-- 竖直方向margin重合
+ 如果上下margin一致无所谓
+ 否则使用margin较大的内容
+ -->
+<!--
+ 内补：背景色
+ 边框：边框颜色
+ 外补：外层标签的背景色
+ -->
+<p>这是一个段落</p>
+<p>
+    这是一个段落
+</p>
+
+
+<div>
+    这是个div
+
+</div>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+
+<img src="../day1224/img/gouwuche.png" width="500" height="500">
+
+
+<div id="target">
+
+    <!-- 宽度
+     = 内容宽度（350） + 2*padding（25）+2* border（25） +2*margin
+
+     -->
+</div>
+
+</body>
+</html>
