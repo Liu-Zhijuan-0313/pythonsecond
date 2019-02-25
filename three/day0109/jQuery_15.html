@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <!--
+    1，引入jquery.js
+     2，引入jquery-ui.js
+     3,引入jquery-ui.css
+     -->
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
+    <style type="text/css">
+			/* div{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+			} */
+		/* 	ul>li:hover{
+				background-color: green;
+			} */
+
+    </style>
+
+
+    <script src="js/lib/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/lib/jquery-ui.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div id="candrag">
+    拖拽我
+</div>
+<div id="canscall">
+    请缩放
+</div>
+
+<div id="canaccor">
+    <p>HTML</p>
+    <ul>
+        <li>HTML1</li>
+        <li>HTML2</li>
+        <li>HTML3</li>
+    </ul>
+
+    <p>CSS</p>
+    <ul>
+        <li>CSS1</li>
+        <li>CSS2</li>
+        <li>CSS3</li>
+    </ul>
+
+    <p>JS</p>
+    <ul>
+        <li>JS1</li>
+        <li>JS2</li>
+        <li>JS3</li>
+    </ul>
+
+</div>
+
+
+<div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">注册</a></li>
+        <li><a href="#tabs-2">登录</a></li>
+    </ul>
+
+    <div id="tabs-1">
+        <form action="" method="">
+            用户名:<input type="text" name="" id="" value=""/>
+            <br>
+            密码:<input type="text" name="" id="" value=""/>
+            <br>
+            邮箱:<input type="text" name="" id="" value=""/>
+            <br>
+            <input type="submit" name="" id="" value="注册"/>
+        </form>
+    </div>
+
+    <div id="tabs-2">
+        <form action="" method="">
+            用户名:<input type="text" name="" id="" value=""/>
+            <br>
+            密码:<input type="text" name="" id="" value=""/>
+            <br>
+            <input type="submit" name="" id="" value="登录"/>
+        </form>
+    </div>
+
+</div>
+
+
+<script type="text/javascript">
+			$("#candrag").draggable();
+			
+			$("#canscall").resizable();
+			
+			
+			$("#canaccor").accordion();
+			
+			$( "#tabs" ).tabs();
+
+</script>
+</body>
+</html>
+
+
+<!-- 
+1,引入jquery-ui.css 
+ 2.引入jquery.js
+ 3,引入jquery-ui.js
+ 
+ 4,制作网页结构
+ 5，找到对象.合适方法()
+ 
+ 
+ -->

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="js/lib/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+    <style type="text/css">
+			p{
+				/* : red; */
+			}
+
+    </style>
+</head>
+<body>
+
+<div>
+
+    <p>p1</p>
+    <p>p2</p>
+    <p class="p">p3</p>
+    <p>p4</p>
+    <p class="p">p5</p>
+    <span>span1</span>
+</div>
+
+
+<div class="p">
+    <p>
+        p1
+        <span>span2</span>
+    </p>
+    <span>span3</span>
+</div>
+
+
+<script type="text/javascript">
+			$(function(){
+				// $("p:first").css("color","red");
+				
+// 				$("p").first().css("color","red");
+// 				$("p").last().css("color","red");
+// 				$("p").eq(2).css("color","red");
+
+// 				$("p").filter(".p").css("color","red");
+// 				
+// 				$("p").not(".p").css("color","green");
+
+				
+				// $("div").children().css("color","green");
+				// $("div").children("span").css("color","green");
+				// $("div").children().filter("span").css("color","green");
+
+				// $("div").find("span").css("color","green");
+				
+				// 在DIV集合只能帅选div
+				// $("div").filter(".p").css("color","green");
+				// $("div").find("p");   
+				
+			})
+
+</script>
+</body>
+</html>
+
+
+<!--
+顺序选择
+first()
+ last()
+ eq(n)
+ 
+ 过滤
+ filter()
+ 
+ 剔除必须带参数
+ not()
+ 
+ 子级 可以带参数过滤
+ children()
+ 
+ 子孙级标签查找
+ find()
+ 
+ 
+ 
+ 
+ -->

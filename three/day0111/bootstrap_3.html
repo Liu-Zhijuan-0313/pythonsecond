@@ -1,0 +1,101 @@
+<!--
+做开发要三思而后行
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BootStrap</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+
+    <link rel="stylesheet" type="text/css" href="js/lib/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.css"/>
+    <style type="text/css">
+			[class^="col"]{
+				text-align: center;
+				border: 1px dotted red;
+			}
+
+    </style>
+
+
+    <!-- 先引入jQuery -->
+    <script src="js/lib/jquery-2.1.4.js"></script>
+    <!-- 引入Bt的交互文件 -->
+    <script src="js/lib/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.js" type="text/javascript"
+            charset="utf-8"></script>
+</head>
+<body>
+<div class="container">
+    <h1>栅格系统</h1>
+    <div class="row">
+        <div class="col-md-2 col-xs-10">col-md-2</div>
+        <div class="col-md-1 col-xs-2">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10">col-md-10</div>
+        <div class="col-md-2">col-md-2</div>
+    </div>
+
+
+    <!-- 可嵌套 -->
+    <div class="row">
+        <div class="col-md-9">
+            <div class="col-md-3">col-md-3</div>
+            <div class="col-md-3">col-md-3</div>
+            <div class="col-md-3">col-md-3</div>
+            <div class="col-md-1">1</div>
+            <div class="col-md-1">1</div>
+            <div class="col-md-1">1</div>
+        </div>
+
+
+        <div class="col-md-3">col-md-3</div>
+    </div>
+
+
+    <!-- 可偏移-->
+    <div class="row">
+        <div class="col-md-2 col-md-offset-1">col-md-2-a</div>
+        <div class="col-md-2">col-md-2-b</div>
+        <div class="col-md-2 col-md-offset-2">col-md-2-c</div>
+    </div>
+
+    <!-- 可排序 -->
+    <div class="row">
+        <div class="col-md-2 col-md-push-2">col-md-2-a</div>
+        <div class="col-md-2 col-md-pull-2">col-md-2-b</div>
+        <div class="col-md-2 ">col-md-2-c</div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+<!-- 
+.row  12
+xs    sm   md   lg
+
+ .col-md-n
+ 
+ .col-md-offset-n 
+ 
+ .col-md-push-n 
+ .col-md-pull-n
+ 
+ 
+ 
+ 
+ -->

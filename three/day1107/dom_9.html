@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+			img{
+				position: absolute;
+			}
+
+    </style>
+</head>
+<body>
+<img src="img/weixin.png">
+
+<script type="text/javascript">
+			
+			let img = document.getElementsByTagName("img")[0];
+			window.onmousemove = function(e){
+				img.style.left = (e.clientX-27) +"px";
+				img.style.top = (e.clientY-27) + "px";			
+			}
+			
+			
+			
+			
+
+</script>
+
+
+</body>
+</html>

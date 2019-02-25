@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>伸缩菜单</title>
+
+    <style type="text/css">
+			ul{
+				display: none;
+			}
+			ul.show{
+				display: block;
+			}
+
+    </style>
+
+    <script src="js/lib/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<!-- div>(p+ul>li*3)*3 -->
+<div>
+    <p>HTML</p>
+    <ul>
+        <li>HTML1</li>
+        <li>HTML2</li>
+        <li>HTML3</li>
+    </ul>
+    <p>CSS</p>
+    <ul>
+        <li>CSS1</li>
+        <li>CSS2</li>
+        <li>CSS3</li>
+    </ul>
+    <p>JavaScript</p>
+    <ul>
+        <li>JavaScript1</li>
+        <li>JavaScript2</li>
+        <li>JavaScript3</li>
+    </ul>
+</div>
+
+
+<script type="text/javascript">
+			
+			// prev代表之前已经展开的元素
+			let prev = null;
+			let ps =document.getElementsByTagName("p");
+			for(let i =0;i<ps.length;i++){
+				ps[i].onclick = function(){
+					if(prev==null){
+						$(this).next().addClass("show");
+						prev = this.nextElementSibling;
+					}
+					// 已经有元素展开
+					else
+					{
+						if(prev==this.nextElementSibling){
+							$(prev).toggleClass("show");
+							prev = null;
+						}
+						else
+						{
+							$(prev).removeClass("show");
+							prev = this.nextElementSibling;
+							$(prev).addClass("show");
+						}
+					}
+					
+				}
+			}
+			
+			
+
+</script>
+
+</body>
+</html>

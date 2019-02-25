@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="css/jquery.slideBox.css" rel="stylesheet" type="text/css"/>
+
+
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.slideBox.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+
+<div id="newspic" class="slideBox">
+    <ul class="items">
+        <li><a href="#" title="本会召开第一届第一次主任会议和委员会议1"><img src="img/newsimg.jpg"></a></li>
+        <li><a href="#" title="本会召开第一届第一次主任会议和委员会议2"><img src="img/newsimg.jpg"></a></li>
+        <li><a href="#" title="本会召开第一届第一次主任会议和委员会议3"><img src="img/newsimg.jpg"></a></li>
+        <li><a href="#" title="本会召开第一届第一次主任会议和委员会议4"><img src="img/newsimg.jpg"></a></li>
+        <li><a href="#" title="本会召开第一届第一次主任会议和委员会议5"><img src="img/newsimg.jpg"></a></li>
+    </ul>
+</div>
+
+
+<script>
+		jQuery(function($){
+			$('#newspic').slideBox({
+				duration : 0.1,//滚动持续时间，单位：秒
+				easing : 'linear',//swing,linear//滚动特效
+				delay : 1,//滚动延迟时间，单位：秒
+				hideClickBar : false,//不自动隐藏点选按键
+				clickBarRadius : 10
+			});
+		});
+
+</script>
+</body>
+</html>
+
+
+<!-- 
+1，拷贝需要的网页结构
+ 2，拷贝需要的样式
+ 3，拷贝交互
+
+ -->
+ 

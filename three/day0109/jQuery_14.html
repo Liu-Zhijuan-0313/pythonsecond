@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="js/lib/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+
+    <style type="text/css">
+			.div{
+				width: 100px;
+				height: 100px;
+				margin: 10px;
+				background-color: red;
+			}
+			
+			span{
+				border: solid red 1px;
+			}
+
+    </style>
+</head>
+<body>
+<div class="hide div">
+
+</div>
+<span id="hide">隐藏</span>
+<span id="show">显示</span>
+<span id="toggleshow">切换</span>
+
+
+<div class="div fade">
+
+</div>
+<span id="fadeout">淡出</span>
+<span id="fadein">淡入</span>
+<span id="fadetoggle">切换</span>
+
+
+<div class="slide div">
+
+</div>
+<span id="slidedown">划出</span>
+<span id="slideup">划入</span>
+<span id="slidetoggle">切换</span>
+
+
+<div class="div open">
+    Helloe
+</div>
+<span id="openleft">左滑</span>
+<span id="openright">右划</span>
+<span id="opentoggle">切换</span>
+
+<script type="text/javascript">
+// 			$("div").css({"width":100,"height":100,"background-color":"red",
+// 			"margin":10,
+// 			});
+			
+			$("#hide").click(function(){  
+				$(".hide").hide(2000, function(){
+					console.log("动画隐藏结束");
+				});
+			})
+			
+			$("#show").click(function(){
+				$(".hide").show(2000,function(){
+					console.log("动画显示结束");
+				});
+			})
+			
+			$("#toggleshow").click(function(){
+				$(".hide").toggle(2000);
+			})
+			
+			
+			$("#fadeout").click(function(){
+				$(".fade").fadeOut(5000);
+			})
+			$("#fadein").click(function(){
+				$(".fade").fadeIn(5000);
+			})
+			$("#fadetoggle").click(function(){
+				$(".fade").fadeToggle(5000);
+			})
+			
+			
+			$("#slidedown").click(function(){
+				$(".slide").slideDown(2000);
+			})
+			$("#slideup").click(function(){
+				$(".slide").slideUp(2000);
+			})
+			$("#slidetoggle").click(function(){
+				$(".slide").slideToggle(2000);
+			})
+			
+			$("#openleft").click(function(){
+				$(".open").animate({"width":0,"height":0,"opacity":0, },2000)
+			})
+			$("#openright").click(function(){
+				$(".open").animate({"width":100,"height":100,"opacity":1, },2000)
+			})
+			$("#opentoggle").click(function(){
+				let width = getComputedStyle( $(".open")[0] ).width;
+				// 去除单位px
+				width = width.substr(0,width.length-2);
+				// console.log(width)
+				if(width==0){
+					$(".open").animate({"width":100},2000)
+				}
+				else
+				{
+					$(".open").animate({"width":0},2000)
+				}
+				
+			})
+
+</script>
+
+</body>
+</html>
+
+<!-- 
+jQuery动画都可以写入播放速度   默认normal  fast  slow  2000毫秒 
+hide()
+show()
+toggle()
+
+fadeIn()
+fadeOut()
+fadeToggle()
+
+slideDown() 
+slideUp()
+slideToggle()
+
+animate({  },2000)
+ 
+ -->

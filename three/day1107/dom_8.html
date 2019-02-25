@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style type="text/css">
+			div{
+				width: 1200px;
+				margin: 0 auto;
+				background-color: gray;
+				height: 500px;
+				text-align: center;
+			}
+			
+			
+
+    </style>
+
+
+</head>
+<body>
+<div>
+    <img src="../day0102/img/dl_01.png" width="500" height="500">
+</div>
+
+
+<script type="text/javascript">
+			let img = document.getElementsByTagName("img")[0];
+			let value = 0;
+			img.onclick = function(e){
+				if(img.width<=400){
+					value = 25;
+				}
+				else if(img.width>=500){
+					value = -25;
+				}
+				img.width += value;
+				img.height += value;	
+			}
+
+</script>
+
+</body>
+</html>

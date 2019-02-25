@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+<p>登录</p>
+<p>注册</p>
+<script type="text/javascript">
+			function prt(){
+				console.log(this);
+			}
+			// prt();
+			
+			document.getElementsByTagName("p")[0].onclick = function(){
+				console.log(this);
+			}
+			document.getElementsByTagName("p")[1].onclick = function(){
+				console.log(this);
+			}
+			// this的值取决于当前作用域(取决于调用this的对象)
+			
+			
+			
+			
+// 			function login(){
+// 				// console.log("点击了登录");
+// 				document.cookie="name='zzy';";
+// 				document.cookie="age=20";
+// 				document.cookie="sex='max'";
+// 			}
+
+// 			let obj = {"age":20};
+// 			
+// 			let objstr = JSON.stringify(obj);
+// 			
+// 			localStorage.setItem("a",objstr);
+
+
+
+
+
+
+</script>
+</body>
+</html>
+
+
+<!--
+1,sessionStorage 存储 
+ 存储周期为当前会话 ，会话结束 存储内容失效
+2，localStorage 存储
+永久存储  
+
+setItem("键","值")
+getItem("键")
+clear()
+remove("键")
+ 
+ 
+ 
+ -->

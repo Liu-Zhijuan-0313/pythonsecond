@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <!-- 开发环境使用
+    将下载好的js放在相对路径下方
+    -->
+    <script src="js/lib/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+
+
+    <!-- 使用在线CDN服务 -->
+    <!-- <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js" type="text/javascript" charset="utf-8"></script> -->
+
+
+    <!-- 当CDN不可用时 使用本地 -->
+    <!-- 	<script src="http://libs.baiduddddddddddd.com/jqussssery/2.0.0/jquery.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+            window.jQuery||document.write('<script src="js/lib/jquery-2.1.4.js" type="text/javascript" charset="utf-8"><\/script>')
+        </script> -->
+
+</head>
+<body onload="console.log('页面内容加载完成')">
+
+
+<script type="text/javascript">
+			console.log($.fn.jquery);
+			
+// 			$(document).ready(function(){
+// 				
+// 				console.log("标签加载完毕");
+// 			}) 			
+			$(function(){
+				console.log("标签加载完毕");
+			})
+			
+			// $().action(function(){}  )	
+
+</script>
+</body>
+</html>
+<!-- 
+1,引入本地jquery
+ 2，引入在线CDNjQuery
+ 3，CDN不可用使用本地
+ 
+ 4，ready 与 onload区别
+ 
+ -->

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <script src="js/lib/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+
+<div id="d1">
+    d1
+    <div id="d2">
+        d2
+        <div id="d3">
+            d3
+            <div id="d4">
+                d4
+                <div id="d5">
+                    d5
+                    <span id="s1">span1</span>
+                    <span id="s2">span2</span>
+                    <span id="s3">span3</span>
+                    <span id="s4">span4</span>
+                    <span id="s5">span5</span>
+                    <span id="s6">span6</span>
+                    <span id="s7">span7</span>
+                    <span id="s8">span8</span>
+                    <span id="s9">span9</span>
+                    <span id="s10">span10</span>
+                    <p>p1</p>
+                </div>
+                <p>p2</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- div.d1>div.d2>div.d3>div#d4>div#d5>div.d6#d6>span*10>{span$} -->
+
+    <!-- div>p.p1+span#span1 -->
+
+
+    <div>
+        <p>p1</p>
+        <span></span>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+			//  外层第一个标签
+			// $("span").parent().css("color","red");
+			// $("span").parents().css("color","red");
+			// 外层标签 直到 不包含
+			// $("span").parentsUntil("#d2").css("color","red");
+			
+			// $("#s6").next().css("color","red");
+			// $("#s6").nextAll().css("color","red");
+			// $("#s6").nextUntil("#s9").css("color","red");
+			
+			// $("#s6").prev().css("color","red");
+			// $("#s6").prevAll().css("color","red");
+			// $("#s6").prevUntil("#s2").css("color","red");
+			
+			// $("#s6").siblings("span").css("color","red");
+			
+			// $("#s6").siblings().css( {"color":"red", "background-color":"blue"  }  );
+
+			
+
+</script>
+
+
+</body>
+</html>
+
+
+<!--   Emmet 
+> 
+# .
+*
+$
++
+()
+ -->

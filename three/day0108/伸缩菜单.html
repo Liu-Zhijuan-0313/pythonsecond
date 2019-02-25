@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+			ul{
+				display: none;
+			}
+
+    </style>
+
+    <script src="js/lib/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div>
+    <p>HTML
+    </p>
+    <ul>
+        <li>HTML1</li>
+        <li>HTML2</li>
+        <li>HTML3</li>
+    </ul>
+
+
+    <p>CSS
+    </p>
+    <ul>
+        <li>CSS1</li>
+        <li>CSS2</li>
+        <li>CSS3</li>
+    </ul>
+    <p>JS
+    </p>
+    <ul>
+        <li>JS1</li>
+        <li>JS2</li>
+        <li>JS3</li>
+    </ul>
+
+</div>
+
+
+<script type="text/javascript">
+			// 通过P标签找到所有对象
+			let ps = document.getElementsByTagName("p");
+			// 遍历对象
+			for(let i=0;i<ps.length;i++){
+				// 赋予点击事件
+				ps[i].onclick = function(){
+					
+					// this代表点击的JS对象
+					for(let j=0;j<ps.length;j++){
+						// ps[j].nextElementSibling.style.display = "none";
+						// $(ps[j]).next().css("display","none");
+						
+						// console.log(ps[j] == this);
+						
+						
+						if(ps[j] == this){
+							// ps[j].nextElementSibling.style.display="block";
+							
+							if(getComputedStyle(ps[j].nextElementSibling).display =="block"){
+								ps[j].nextElementSibling.style.display="none";
+							}
+							else{
+								ps[j].nextElementSibling.style.display="block";
+							}
+							
+						}
+						else
+						{
+							ps[j].nextElementSibling.style.display="none";
+						}
+						
+						
+						
+					}					
+					
+					// this.nextElementSibling.style.display = "block";
+					// $(this).next().css("display","block");
+				}
+			}
+
+</script>
+
+</body>
+</html>
+
+
+<!--
+7
+ :first 
+ :last 
+ :eq(n)
+ :gt(n)
+ :lt(n)
+ :even 
+ :odd
+
+
+7
+ .first() 
+ .last() 
+ .eq(n) 
+ .filter() 
+ .not() 
+ .children() 
+ .find()
+ 
+ 
+10 
+.parent()
+.parents() 
+.parentsUnitl()
+
+.next() 
+.nextAll()
+.nextUntil() 
+
+.prev() 
+.prevAll()
+.prevUntil() 
+
+.siblings()
+ 
+ -->

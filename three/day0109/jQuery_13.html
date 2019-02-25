@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="js/lib/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+
+<p>开始计数</p>
+<p>结束计数</p>
+<p>当前点击计数为<span id="num">0</span></p>
+
+
+<script type="text/javascript">
+			let num = 0;
+			
+			$("p").first().click(function(e){
+				e.stopPropagation();
+				
+				$(window).off("click");
+				// console.log('点击了开始');
+				$(window).on("click",function(){
+					// console.log('点击了window');
+					num++;
+					$("#num").text(num);
+				})
+				
+			})
+			
+			$("p").eq(1).click(function(){
+				// console.log('点击了结束');
+				$(window).off("click");
+			})
+
+</script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="js/lib/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body style="height: 2000px;">
+<div>
+    <p>p1</p>
+</div>
+<a href="http://www.baidu.com">aa</a>
+<script type="text/javascript">
+			
+			$("a").click(function(e){
+				// 阻止默认事件执行
+				// e.originalEvent.preventDefault();
+				e.preventDefault();
+			})
+		
+		
+			// jQuery封装自自己的事件对象e ={originalEvent = JS的事件参数  }
+			// 
+			
+			$("p").click(function(e){
+				// 阻止事件继续向外层标签执行
+				// 调用JS函数stopPropagation
+				// e.originalEvent.stopPropagation();
+				
+				
+				// 调用jQuery函数stopPropagation
+				e.stopPropagation();
+				
+				// console.log(e.originalEvent.clientX);
+				// console.log(e.clientX);
+			})
+			
+			
+			
+			// 确保标签可用才执行
+// 			$(function(){
+// 				
+// 			})
+			
+			// $(document).ready(function(){  });
+			
+			// 将匿名函数作为参数传递个jQuery方法
+// 			$(window).resize(function(){
+// 				console.log("窗口大小变化了");
+// 			});
+			
+			
+// 			$(window).scroll(function(){
+// 				console.log("窗口滚动了1111111111111");
+// 			})
+// 
+// 			$(window).scroll(function(){
+// 				console.log("窗口滚动了22222222222222");
+// 			})
+
+
+// 			$("p").click(function(){
+// 				console.log("点击了");
+// 			})
+
+			// on 代表注册 off代表取消注册
+			// 第一个参数为事件名字符床 第二个参数为匿名函数
+// 			$("p").on("click",function(){ 
+// 				console.log("点击了");
+// 			})
+// 			$("p").on("click",function(){ 
+// 				console.log("点击了11111");
+// 			})
+// 			
+// 			function click2(){
+// 				console.log("点击了2222222");
+// 			}
+// 			
+// 			$("p").on("click",click2);			
+// 			
+// 			$("p").off("click",click2);
+
+
+// 			$("p").one("click",function(){
+// 				console.log("one");
+// 			})
+
+
+</script>
+</body>
+</html>
+
+
+<!-- 
+jQuery事件
+ $(function(){   })
+ 
+ $("p").click(function(){  })
+ $("p").mouseenter(function(){  })
+ 
+ $("p").on("click", function(){ })
+ $("p").off("click") //取消掉所有点击事件
+ $("p").off("click","点击事件名字") 取消某一个点击事件
+
+$("p").one("click", function(){})  只能触发一次事件
+
+ -->

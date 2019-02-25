@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+<p>当前点击次数为：<span id="num">0</span></p>
+<p id="start">开始计数</p>
+<p id="stop">结束计数</p>
+
+<!-- 如何阻止文档默认事件 -->
+<a id="hta" href="javascript:void(0)">跳转</a>
+
+
+<script type="text/javascript">
+			function cli(){
+				console.log('点击了')
+			}
+			
+			
+			
+			
+			let a = document.getElementById("hta");
+// 			a.onclick= function(e){
+// 				// 阻止默认事件
+// 				e.preventDefault();
+// 			};
+			
+			
+// 			let i = 0;
+// 			let spannum = document.getElementById("num");
+// 			let start = document.getElementById("start");
+// 			let stop = document.getElementById("stop");
+// 			
+// 			// 点击开始按钮 注册windlow点击事件
+// 			start.onclick = function(e){
+// 				// 阻止事件继续执行
+// 				e.stopPropagation();
+// 				window.onclick = function(){
+// 					i++;				
+// 					spannum.innerText = i;
+// 				}
+// 			}
+// 			
+// 			// 点击计数按钮  取消window注册的的时间
+// 			stop.onclick = function(){
+// 				window.onclick = null;
+// 			}
+			
+			
+			
+			// 当点击  内层标签  同时会触发点击外层标签
+// 			window.onclick = function(){
+// 				console.log("点击了window");
+// 			}
+// 			
+// 			window.document.onclick = function(){
+// 				console.log("点击了document");
+// 			}
+// 			
+// 			window.document.body.onclick = function(){
+// 				console.log("点击了body");
+// 			}
+// 			
+// 			start.onclick = function(e){
+// 				// 阻止事件继续向外层标签执行
+// 				e.stopPropagation();
+// 
+// 
+// 			}
+			
+			
+
+</script>
+</body>
+</html>
+
+
+<!--
+1,取消注册事件 
+ 对象.事件名=null 
+2,阻止事件的继续向外层标签执行
+e.stopPropagation()
+3,阻止默认事件
+ 
+ e.preventDefault()
+ 
+ href="javascript:void(0)"
+ 
+ 
+ 
+ -->

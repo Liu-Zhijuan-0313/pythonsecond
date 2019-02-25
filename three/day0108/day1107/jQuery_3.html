@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+			div{
+				/* background-color: ; */
+			}
+
+    </style>
+
+    <script src="js/lib/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+
+<div>
+
+    div1
+
+</div>
+<div>
+
+    div2
+
+</div>
+
+<script type="text/javascript">
+			
+			// 别名
+			let a = $.noConflict();
+			
+			
+// 			a("div").each(function(){
+// 				a(this).css("color","red");
+// 		
+// 			} );
+			
+			
+			a("div").css("color","red");
+			
+
+</script>
+
+<script type="text/javascript">
+			let $ = 100;
+			
+			a("div").css("background-color","blue");
+			
+			console.log(a,$);
+
+</script>
+</body>
+</html>
+
+
+<!-- 
+ 
+1,链式语法
+ 
+2,each 遍历
+
+3，$.noConflict()
+
+4,将js对象转jQuery 
+$(js对象).css()
+ -->
+
+
+<!--
+ 支持CSS1-CSS3所有选择器
+ 34   = 4  5  6  7  12
+ *
+ 标签
+ id
+ 类名
+
+ 逗号
+ 空格
+ >
+ +
+ ~
+
+ 包含属性
+ 包含属性值等于  =
+ 包含属性值以**开头 ^=
+ 包含属性值以**结尾  $=
+ 包含属性值包含**字符串  *=
+ 包含属性值 其中一个值为**  ~=
+
+
+ :link
+ :visited
+ :hover
+ :active
+ :check
+ :enable
+ :disable
+
+
+ :first-child
+ :last-child
+ :nth-child(n)
+ :nth-last-child(n)
+ :only-child
+
+ :first-of-type
+ :last-of-type
+ :nth-of-type(n)
+ :nth-last-of-type(n)
+ :only-of-type
+
+ :empty
+ :not()
+
+
+
+
+
+
+
+
+ -->

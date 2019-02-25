@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+
+			div{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				position: absolute;
+				
+			}
+			
+
+    </style>
+    <script src="js/lib/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<span>stop</span>
+
+<p>先变大后边小</p>
+<div>
+    <img width="100" height="100" src="img/weixin.png">
+</div>
+
+<script type="text/javascript">
+			$("p").click(function(){
+				$("div").animate({"width":200,"height":200},2000,function(){
+					$("div").animate({"width":20,"height":20},3000);
+				})
+			})
+			
+			
+			
+			$("span").click(function(e){
+				e.stopPropagation();
+
+				// 第一个参数代表是否终止后续所有动画  第二个参数代表是否将当前动画停留到最后一帧
+				// $("div").stop(false,false);
+				// $("div").stop(false,true);
+				// $("div").stop(true,true);
+				$("div").stop(true,false);
+
+			})
+			
+			
+			$(window).click(function(e){
+				// console.log("++");
+// 				$("div").delay(5000).animate({"left":e.clientX-50},3000 );
+// 				$("div").delay(5000).animate({"top":e.clientY-50},2000 );
+			$("div").animate({"top":e.clientY-50,"left":e.clientX-50},3000,"linear" );
+			})
+
+</script>
+
+
+<script type="text/javascript">
+// 			$(window).click(function(e){
+// 				console.log("+++");
+// 				$("div").animate({
+// 					"left":e.clientX-25,
+// 					"top":e.clientY-25,
+// 				}, Math.sqrt(Math.pow(e.clientX,2)+ Math.pow(e.clientY,2))   )
+// 				
+// 			})
+
+			setInterval(function(){
+				
+				$("div").animate({
+					"left":Math.random()*window.innerWidth,
+					"top":Math.random()*window.innerHeight,
+					
+				},3000);
+				
+			},3000)
+
+			
+
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				margin: 8px;
+			}
+			div{
+				padding: 20px;
+			}
+			
+			/* div{
+				padding: 20px;
+			} */
+			/* p{
+				padding: 10px;
+			}
+			img{
+				position: relative;
+				left: 50px;
+			} */
+			
+		
+
+    </style>
+</head>
+<body>
+
+
+<div>
+    <p>
+        <img id="img" src="img/weixin.png">
+    </p>
+</div>
+
+
+<script type="text/javascript">
+			let img = document.getElementById("img");
+			// 只能得到内联样式( 属性中编写的样式)
+			// console.log(span.style.left);
+			
+			// getComputedStyle 可以得到内部或者外部样式表
+			// console.log(getComputedStyle(img).left);
+			
+			 console.log(img.offsetLeft ,img.offsetTop    );
+			
+
+</script>
+</body>
+</html>

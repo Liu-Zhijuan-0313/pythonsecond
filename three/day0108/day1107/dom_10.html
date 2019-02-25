@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+			div{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				position: absolute;
+			}
+
+    </style>
+</head>
+<body>
+<div></div>
+
+<script type="text/javascript">
+			let div = document.getElementsByTagName("div")[0];
+			// 鼠标在div上点击开始事件
+			div.onmousedown = function(e1){			
+				// 得到鼠标点击瞬间  的偏移
+				let offsetx = e1.clientX - div.offsetLeft;
+				let offsety = e1.clientY - div.offsetTop;			
+				
+// 				b = c - a
+// 				b代表偏移量不能变
+				
+				// 鼠标在window上移动 时更改图片位置
+				window.onmousemove = function(e2){	
+					// a = c - b
+					div.style.left = (e2.clientX- offsetx)+"px";
+					
+					div.style.top=(e2.clientY-offsety)+"px";
+				}
+			}
+			
+			
+			// 鼠标在div上抬起停止事件			
+			div.onmouseup = function(){
+				window.onmousemove = null;
+			}
+			
+
+</script>
+</body>
+</html>
